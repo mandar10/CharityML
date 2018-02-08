@@ -15960,10 +15960,14 @@ So, therefore, the best model is logistic regression</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> 
-Linear regression predicts a real valued output y based on a weighted sum of input variables or features xi, plus a constant b term. 
-Logistic regression is similar to linear regression, but with one critical addition. The logistic regression model still computes a weighted sum of the input features xi and the intercept term b, but it runs this result through a special non-linear function
-It's an S shaped function that gets closer and closer to 1 as the input value increases above 0 and closer and closer to 0 as the input value decreases far below 0. The effect of applying the logistic function is to compress the output of the linear function so that it's limited to a range between 0 and 1.
-We could identify data instances with the target value of 0 as belonging to the negative class and data instances with a target value of 1 belonging to the positive class.</p>
+Logistic Regression is a statistical analysis method used to predict a data value based on prior observations of a data set. A logistic regression model predicts a dependent data variable by analyzing the relationship between one or more existing independent variables.</p>
+<p><strong>Working:</strong></p>
+<p>Linear regression predicts a output y by multiplying weight with features, and add them up. Logistic regression is similar to linear regression, but with one critical addition. The logistic regression runs the result through a special non-linear function It's an S shaped function. The effect of applying the logistic function is to compress the output of the linear function so that it's limited to a range between 0 and 1. We could identify class of the data by the output of the function</p>
+<p><img src="picture.png" alt="title"></p>
+<p>Suppose Pingu wants to know, how likely it will be happy based on its daily activities. If the penguin wants to build a logistic regression model to predict it happiness based on its daily activities. Pingu needs both the happy and sad activities. In machine learning terminology these activities are known as the Input parameters ( features ).
+Activities can be Eating squids(happy), Eating small Fishes(happy), Hit by other Penguin(sad), Eating Crabs(sad)
+Pingu is going to use the above activities ( features ) to train the logistic regression model. Later the trained logistic regression model will predict how the penguin is feeling for the new penguin activities.</p>
+<p>As it’s not possible to use the above categorical data table to build the logistic regression.  The above activities data table needs to convert into activities score, weights, and the corresponding target.</p>
 
 </div>
 </div>
