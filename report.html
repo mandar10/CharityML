@@ -8456,15 +8456,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11214,7 +11214,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11649,7 +11649,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11705,14 +11705,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -12928,7 +12928,7 @@ div#notebook {
     <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span><span class="o">==</span><span class="s2">&quot;&gt;50K&quot;</span><span class="p">:</span>
         <span class="n">a</span><span class="o">=</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span>
     <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span><span class="o">==</span><span class="s2">&quot;&lt;=50K&quot;</span><span class="p">:</span>
-        <span class="n">b</span><span class="o">=</span><span class="n">b</span><span class="o">+</span><span class="mi">1</span>  
+        <span class="n">b</span><span class="o">=</span><span class="n">b</span><span class="o">+</span><span class="mi">1</span>
 
 
 <span class="c1"># TODO: Number of records where individual&#39;s income is more than $50,000</span>
@@ -14348,9 +14348,9 @@ AEBvaIQAAAAAvaERAgAAAPTG/wcZRvvcxpZZvAAAAABJRU5ErkJggg==
 <span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 
 <span class="c1"># Split the &#39;features&#39; and &#39;income&#39; data into training and testing sets</span>
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">features_final</span><span class="p">,</span> 
-                                                    <span class="n">income</span><span class="p">,</span> 
-                                                    <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span> 
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">features_final</span><span class="p">,</span>
+                                                    <span class="n">income</span><span class="p">,</span>
+                                                    <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span>
                                                     <span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
 
 <span class="c1"># Show the results of the split</span>
@@ -14583,7 +14583,7 @@ In the code block below, you will need to implement the following:</p>
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import two metrics from sklearn - fbeta_score and accuracy_score</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span><span class="n">fbeta_score</span>
-<span class="k">def</span> <span class="nf">train_predict</span><span class="p">(</span><span class="n">learner</span><span class="p">,</span> <span class="n">sample_size</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">):</span> 
+<span class="k">def</span> <span class="nf">train_predict</span><span class="p">(</span><span class="n">learner</span><span class="p">,</span> <span class="n">sample_size</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    inputs:</span>
 <span class="sd">       - learner: the learning algorithm to be trained and predicted on</span>
@@ -14593,45 +14593,45 @@ In the code block below, you will need to implement the following:</p>
 <span class="sd">       - X_test: features testing set</span>
 <span class="sd">       - y_test: income testing set</span>
 <span class="sd">    &#39;&#39;&#39;</span>
-    
+
     <span class="n">results</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="n">X_train</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[:</span><span class="n">sample_size</span><span class="p">]</span>
     <span class="n">y_train</span> <span class="o">=</span> <span class="n">y_train</span><span class="p">[:</span><span class="n">sample_size</span><span class="p">]</span>
-    
+
     <span class="c1"># TODO: Fit the learner to the training data using slicing with &#39;sample_size&#39; using .fit(training_features[:], training_labels[:])</span>
     <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span> <span class="c1"># Get start time</span>
     <span class="n">learner</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
     <span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span> <span class="c1"># Get end time</span>
     <span class="n">train_time_full</span><span class="o">=</span><span class="n">end</span><span class="o">-</span><span class="n">start</span>
-    
+
     <span class="c1"># TODO: Calculate the training time</span>
     <span class="n">results</span><span class="p">[</span><span class="s1">&#39;train_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">end</span><span class="o">-</span><span class="n">start</span>
-        
+
     <span class="c1"># TODO: Get the predictions on the test set(X_test),</span>
     <span class="c1">#       then get predictions on the first 300 training samples(X_train) using .predict()</span>
     <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span> <span class="c1"># Get start time</span>
     <span class="n">predictions_test</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
     <span class="n">predictions_train</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_train</span><span class="p">[:</span><span class="mi">300</span><span class="p">])</span>
     <span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span> <span class="c1"># Get end time</span>
-    
+
     <span class="c1"># TODO: Calculate the total prediction time</span>
     <span class="n">results</span><span class="p">[</span><span class="s1">&#39;pred_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">end</span><span class="o">-</span><span class="n">start</span>
-            
+
     <span class="c1"># TODO: Compute accuracy on the first 300 training samples which is y_train[:300]</span>
     <span class="n">results</span><span class="p">[</span><span class="s1">&#39;acc_train&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_train</span><span class="p">[:</span><span class="mi">300</span><span class="p">],</span><span class="n">predictions_train</span><span class="p">)</span>
-        
+
     <span class="c1"># TODO: Compute accuracy on test set using accuracy_score()</span>
     <span class="n">results</span><span class="p">[</span><span class="s1">&#39;acc_test&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span><span class="n">predictions_test</span><span class="p">)</span>
-    
+
     <span class="c1"># TODO: Compute F-score on the the first 300 training samples using fbeta_score()</span>
     <span class="n">results</span><span class="p">[</span><span class="s1">&#39;f_train&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">fbeta_score</span><span class="p">(</span><span class="n">y_train</span><span class="p">[:</span><span class="mi">300</span><span class="p">],</span> <span class="n">predictions_train</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;binary&#39;</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-        
+
     <span class="c1"># TODO: Compute F-score on the test set which is y_test</span>
     <span class="n">results</span><span class="p">[</span><span class="s1">&#39;f_test&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">fbeta_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predictions_test</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;binary&#39;</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-       
+
     <span class="c1"># Success</span>
     <span class="k">print</span> <span class="s2">&quot;{} trained on {} samples.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">learner</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span><span class="p">,</span> <span class="n">sample_size</span><span class="p">)</span>
-        
+
     <span class="c1"># Return the results</span>
     <span class="k">return</span> <span class="n">results</span>
 </pre></div>
@@ -15913,7 +15913,7 @@ IkmSJEmSBsb/D0MWp3LZ+UPVAAAAAElFTkSuQmCC
 <h3 id="Question-3---Choosing-the-Best-Model">Question 3 - Choosing the Best Model<a class="anchor-link" href="#Question-3---Choosing-the-Best-Model">&#182;</a></h3><ul>
 <li>Based on the evaluation you performed earlier, in one to two paragraphs, explain to <em>CharityML</em> which of the three models you believe to be most appropriate for the task of identifying individuals that make more than \$50,000. </li>
 </ul>
-<p><strong> HINT: </strong> 
+<p><strong> HINT: </strong>
 Look at the graph at the bottom left from the cell above(the visualization created by <code>vs.evaluate(results, accuracy, fscore)</code>) and check the F score for the testing set when 100% of the training set is used. Which model has the highest score? Your answer should include discussion of the:</p>
 <ul>
 <li>metrics - F score on the testing when 100% of the training data is used, </li>
@@ -15930,12 +15930,9 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
-The best model to identify individuals that make more than 50K would be the logistic regression
-Linear regression predicts a real valued output y based on a weighted sum of input variables or features xi, plus a constant b term. Logistic regression is similar to linear regression, but with one critical addition. The logistic regression model still computes a weighted sum of the input features xi and the intercept term b, but it runs this result through a special non-linear function
-Logistic regression is fast in training and testing the dataset and it also has a good balance between the training and testing speed.
-SVM has slightly higher accuracy and F-score than Logistic Regression but it is slow compared to logistic regression in training the data
-We cannot consider Naïve Bayes because it has very poor accuracy and F-score.
-So, therefore, the best model is logistic regression</p>
+Support Vector Machines gives the best accuracy score on testing data. It has the most consistent performance regardless of training set size, and consistently delivers high accuracy scores above 0.8 and also a better f-score. GaussianNB gives very poor accuracy score of 0.3-0.6 on the test and training sets. On the other hand Logistic Regression gives little less accracy and f-score than SVM, but it is little faster than SVM.
+But Considering the situation and the environment when we will be using this project SVM is the best. This model is likely to be trained only during charity events which are held ocassionaly so time would not be big constraint here.
+So as per the above conclusion we can say that SVC is the right model.</p>
 
 </div>
 </div>
@@ -15959,15 +15956,21 @@ So, therefore, the best model is logistic regression</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> 
-Logistic Regression is a statistical analysis method used to predict a data value based on prior observations of a data set. A logistic regression model predicts a dependent data variable by analyzing the relationship between one or more existing independent variables.</p>
-<p><strong>Working:</strong></p>
-<p>Linear regression predicts a output y by multiplying weight with features, and add them up. Logistic regression is similar to linear regression, but with one critical addition. The logistic regression runs the result through a special non-linear function It's an S shaped function. The effect of applying the logistic function is to compress the output of the linear function so that it's limited to a range between 0 and 1. We could identify class of the data by the output of the function</p>
-<p><img src="picture.png" alt="title"></p>
-<p>Suppose Pingu wants to know, how likely it will be happy based on its daily activities. If the penguin wants to build a logistic regression model to predict it happiness based on its daily activities. Pingu needs both the happy and sad activities. In machine learning terminology these activities are known as the Input parameters ( features ).
-Activities can be Eating squids(happy), Eating small Fishes(happy), Hit by other Penguin(sad), Eating Crabs(sad)
-Pingu is going to use the above activities ( features ) to train the logistic regression model. Later the trained logistic regression model will predict how the penguin is feeling for the new penguin activities.</p>
-<p>As it’s not possible to use the above categorical data table to build the logistic regression.  The above activities data table needs to convert into activities score, weights, and the corresponding target.</p>
+<p>Suppose you have balls of two color on the table.
+<img src="pic1.png" alt="title">
+You have to sepearte those balls.So we will use a stick to seperate them and we can see it works pretty well.
+<img src="pic2.png" alt="title">
+Some Evil guy comes and places more balls on the table, it kind of works but one of the balls is on the wrong side and there is probably a better place to put the stick now.
+<img src="pic3.png" alt="title">
+SVM tries to put the stick in the best posssible way by having as big gap as possible on either side of the stick.
+<img src="pic4.png" alt="title">
+Now the Evil Guy sees that you have properly separated the balls
+<img src="pic5.png" alt="title">
+The Evil guy now gives you new challenge by mixing the balls very well.
+<img src="pic6.png" alt="title">
+There is no stick in the world that can split the balls. So what do you do? You flip the table of course! Throwing the balls into the air. Then, with your pro ninja skills, you grab a sheet of paper and slip it between the balls.
+<img src="pic7.png" alt="title">
+This process is known as kernel in SVM</p>
 
 </div>
 </div>
@@ -16750,7 +16753,7 @@ ARibPvsRdIefAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-I got my predictions partially right. The Right Predictions were age, education-num, capital gain. The reason behind their selection is mentioned in the above answer. 
+I got my predictions partially right. The Right Predictions were age, education-num, capital gain. The reason behind their selection is mentioned in the above answer.
 The predictions which I got wrong were work-class and hours-per-week.
 Work-class was wrong because even a government employee might earn more than the one working in the private sector.
 Hours-per-week was wrong because sometimes people with low job profile may have to work more and still they earn less.
